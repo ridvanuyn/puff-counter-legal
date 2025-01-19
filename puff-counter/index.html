@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puff Counter - Smart Smoking Reduction App</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #27ae60;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 4rem 2rem;
+            background: var(--light-bg);
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 4rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background: var(--accent-color);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        .legal-links {
+            text-align: center;
+            padding: 2rem;
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .legal-links a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+
+        .legal-links a:hover {
+            text-decoration: underline;
+        }
+
+        .emoji {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Puff Counter</h1>
+        <p>Smart Way to Track and Reduce Your Smoking Habits</p>
+    </div>
+
+    <div class="features">
+        <div class="feature-card">
+            <div class="emoji">🎯</div>
+            <h3>Smart Goal Setting</h3>
+            <p>AI-powered personalized reduction plans tailored to your habits</p>
+        </div>
+        <div class="feature-card">
+            <div class="emoji">📊</div>
+            <h3>Advanced Analytics</h3>
+            <p>Track your progress with detailed insights and visualizations</p>
+        </div>
+        <div class="feature-card">
+            <div class="emoji">💰</div>
+            <h3>Money Saved</h3>
+            <p>Watch your savings grow in real-time as you reduce</p>
+        </div>
+        <div class="feature-card">
+            <div class="emoji">🏆</div>
+            <h3>Achievement System</h3>
+            <p>Stay motivated with rewards and milestones</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="mailto:ridvan.uyn@gmail.com" method="POST" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="legal-links">
+        <a href="https://ridvanuyn.github.io/puff-counter-legal/privacy/">Privacy Policy</a>
+        <a href="https://ridvanuyn.github.io/puff-counter-legal/terms-of-service/">Terms of Service</a>
+        <a href="https://ridvanuyn.github.io/puff-counter-legal/data-usage-policy/">Data Usage Policy</a>
+        <p>© 2024 Puff Counter. All rights reserved.</p>
+    </div>
+</body>
+</html>
