@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecting to Puff Counter</title>
+    <script>
+        window.onload = function() {
+            // Önce universal link dene
+            window.location = "https://ridvanuyn.github.io/explore";
+            
+            // Universal link çalışmazsa custom scheme'e yönlendir
+            setTimeout(function() {
+                window.location = "puffcounter://explore";
+            }, 1000);
+            
+            // Hiçbiri çalışmazsa App Store'a yönlendir
+            setTimeout(function() {
+                window.location = "https://apps.apple.com/us/app/quit-smoking-puff-counter/id6740138374";
+            }, 2000);
+        }
+    </script>
+</head>
+<body>
+    <h1>Redirecting to Puff Counter...</h1>
+</body>
+</html>
